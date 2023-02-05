@@ -1,0 +1,51 @@
+<!--The HTML Canvas element provides HTML a bitmapped surface to work with.-->
+<!--It is used to draw graphics on the web page.-->
+<!--The HTML 5 <canvas> tag is used to draw graphics using scripting language like JavaScript.-->
+<!--The <canvas>element is only a container for graphics, you must need a scripting language to draw the graphics.-->
+<!--The <canvas>element allows for dynamic and scriptable rendering for 2D shapes and bitmap images.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+
+    
+</head>
+<body>
+    
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid;">
+    Your Canvas doesn't support Canvas tag.
+    </canvas>
+
+    <canvas id="myCanvas2" width="300" height="200" style="border: 2px solid;">
+        Your Canvas doesn't support Canvas tag.
+        </canvas>
+    
+    
+    <script type="text/javascript">
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0,0,200,100);
+    </script>
+
+<script type="text/javascript">
+
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+    //  ctx.fillStyle = "#FF0000";
+    //  ctx.fillRect(0,0,200,100);
+
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+</script>
+
+    
+
+</body>
+</html>    

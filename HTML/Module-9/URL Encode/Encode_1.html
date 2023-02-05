@@ -1,0 +1,58 @@
+<!-- URL Encode: URL Encoding is used to convert non-ASCII characters into a format that
+                 can be used over the Internet because a URL is sent over the Internet by 
+                 using the ASCII character-set only. If a URL contains characters outside
+                the ASCII set, the URL has to be converted. -->
+
+                <!-- In URL encoding, the non-ASCII characters are replaced with a "%"
+                     followed by hexadecimal digits. -->
+
+                <!-- URL cannot contain spaces. URL encoding normally replaces a space 
+                     with a plus (+) sign, or %20. -->
+
+
+                     <!--Here we learn about the input attribute.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Input attribute</title>
+</head>
+
+<body>
+
+    <form action="form_submit.html" method="get" target="_blank">
+
+
+        <label for="">Firstname: </label>
+        <input type="text" name="Firstname" required autofocus><br><br>
+        <!--required: aapde e field ma data farjiyatpane bharvo j pade.-->
+
+        <label for="">Lastname: </label>
+        <input type="text" name="Lastname" required autofocus><br><br>
+        <!--autofocus: jyare aapde webpage load kariye etle curser box ma aavi j jay.-->
+
+        <label for="">Contact Number: </label>
+        <input type="tel" name="Contactnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format:123-123-1234">
+        <!--placeholder: it's use for user understading that what user can enter or what format user must follow.-->
+
+        <br><br>
+
+        <label for="">Nickname: </label>
+        <input type="text" name="Nickname" disabled>
+        <!--disabled: it's use for disable of any input tag.-->
+
+        <br><br>
+
+        <input type="submit" name="submit" value="Click Me!">
+        <!--value: aapde value ma je name nakhsu ne e name j type nu webpage par batavse.-->
+
+
+
+    </form>
+
+
+</body>
+
+</html>

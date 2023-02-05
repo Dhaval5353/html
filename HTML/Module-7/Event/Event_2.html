@@ -1,0 +1,42 @@
+<!--Keyboard Event Attributes-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event Attributes</title>
+
+    <script type="text/javascript">
+
+        function keydown(){
+
+            document.body.style.background = "lightgreen";
+        }
+
+        function keyPress(){
+
+            document.body.style.background = "cyan";
+        }
+
+        function keyUp(){
+
+            document.body.style.background = "Yellow";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+
+        <label for="">Firstname: </label><input type="text" name="Firstname" onkeydown="keydown()">
+ 
+        <label for="">Lastname: </label><input type="text" name="Lastname" onkeyPress="keyPress()">
+
+        <label for="">Intrest: </label><input type="text" name="Intrest" onkeyUp="keyUp()">
+
+
+
+    </form>
+</body>
+</html>

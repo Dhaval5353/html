@@ -1,0 +1,71 @@
+<!--Mouse Event Attributes-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Attributes</title>
+
+    <script type="text/javascript">
+        function Onclick(){
+
+            alert("Sani Mani Ghare Jayne Suy Jaa ne:)")
+        }
+
+        function MouseDown(){
+
+            document.body.style.background = "lightgreen";
+        }
+
+        function MouseOver(){
+
+            document.body.style.background = "lightpink";
+        }
+
+        function MouseOut(){
+
+            document.body.style.background = "lightblue";
+        }
+
+        function MouseMove(){
+
+            document.body.style.background = "brown";
+        }
+
+        function MouseUpFunction(){
+
+            document.body.style.background = "red";
+        }
+
+    </script>
+</head>
+<body>
+    
+    <form action="">
+
+        <label for="">Firstname</label><input type="text" name="Firstname" onclick="Onclick()">
+
+        <br><br>
+
+        <label for="">Lastname</label><input type="text" name="Lastname" onmousedown="MouseDown()">
+
+        <br><br>
+
+        <label for="">Fathername</label><input type="text" name="Fathername" onmouseover="MouseOver()">
+
+        <br><br>
+
+        <label for="">Mothername</label><input type="text" name="Mothername" onmouseout="MouseOut()">
+
+        <br><br>
+
+        <label for="">Brothername</label><input type="text" name="Brothername" onmousemove="MouseMove()">
+
+        <br><br>
+
+        <button onmouseup="MouseUpFunction()">Click Me!</button>
+    </form>
+</body>
+</html>

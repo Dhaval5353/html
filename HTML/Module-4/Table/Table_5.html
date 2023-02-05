@@ -1,0 +1,63 @@
+<!--Here we use some attributes.-->
+<!--here we use "rowspan"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Introduction to table</title>
+    <style>
+        table{
+            border: 2px solid;}
+        table tr td, table th{
+            border: 1px solid;
+        }    
+    </style>
+
+</head>
+<body>
+
+    <!--Caption tag hanmesha table tag ni upar lakhvama aave chhe.-->
+    
+    <caption>Asoit Students</caption>
+    <table>
+
+        <thead><!--use for represent the header to the browser-->
+
+            <tr><!--tr="table row"-->
+            
+                <th>Id</th><!--th="table header"-->
+                <th>Firstname</th>
+                <th>Lastname</th>
+    
+            </tr>
+
+        </thead>
+
+        <tbody><!--use for represent the body to the browser-->
+            <tr>
+            
+                <td rowspan="2">1</td><!--td="table Data"-->
+                <td>Dhaval</td>
+                <td>Chavda</td>
+                
+            </tr>
+    
+            <tr>
+                
+                <td>Samidh</td>
+                <td>Darji</td>
+            </tr>
+        </tbody>
+
+        <tfoot><!--use for represent the foot of the table to the browser-->
+            <tr>
+                <td>3</td>
+                <td>Keval</td>
+                <td>Patel</td>
+            </tr>
+        </tfoot>
+
+        </table>
+</body>
+</html> 

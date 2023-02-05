@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form event attributes</title>
+
+    <script type="text/javascript">
+
+        function changeBackground(){
+            document.body.style.background = "yellow";
+        }
+
+        function changeBorder(){
+
+            document.body.style.border = "10px solid";
+        }
+
+        function changeBackgroundOnsubmit(){
+
+            document.body.style.background ="purple";
+        }
+    </script>
+</head>
+<body>
+    
+    <form action="" method="" onreset="changeBorder()" onsubmit="changeBackgroundOnsubmit()"><!--Onreset: aa ek evo aatribute chhe jene form na tag ma lakhvo pade karn k aakha form ne reset karvanu chhe aapde.-->
+
+                                                                                              <!--Onsubmit: aanu pan onreset nu jevu j chhe.-->
+
+        <label for="">Firstname: </label><input type="text" name="Firstname" onblur="changeBackground()"><!--Onblur: onblur firing karva mate. Etle k jevu focus hatse evu j durghatna ghatse.-->
+
+        <label for="">Lastname: </label><input type="text" name="Firstname" onchange="changeBackground()"><!--Onchange: input field ma kaik value nakhya pachhi jo kay ferfar that to event firing thase.-->
+
+        <label for="">Middelname: </label><input type="text" name="Firstname" onfocus="changeBackground()"><!--Onfocus: jyare e field ni andar focus kariye tyare event firing thase.-->
+
+        <label for="">Fathername: </label><input type="text" name="Firstname" oninput="changeBorder()"><br><br><!--Oninput: jyare aapde koy input nakhiye tyare event firing thase. -->
+
+        <label for="">Email: </label><input type="email" name="Email" oninvalid="changeBorder()"><br><br><!--Oninvalid: jyare input field ma nakheli badhi detail invalid hase to event firing thase.-->
+
+        <input type="reset" name="reset">
+
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+</html>
